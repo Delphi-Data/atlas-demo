@@ -1,0 +1,4 @@
+
+atlas_demo_dbt/target/
+atlas_demo_dbt/dbt_packages/
+atlas_demo_dbt/logs/

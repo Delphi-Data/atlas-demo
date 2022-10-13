@@ -1,0 +1,22 @@
+atlas_demo_dbt:
+  outputs:
+
+    dev:
+      type: sqlite
+      threads: 1
+      database: <database name>
+      schema: 'main'
+      schemas_and_paths:
+        main: '/home/pn/sqlite/dbt/atlas_demo_dbt.db'
+      schema_directory: '/home/pn/sqlite/dbt/data'
+
+    prod:
+      type: sqlite
+      threads: 1
+      database: <database name>
+      schema: 'main'
+      schemas_and_paths:
+        main: '/home/pn/sqlite/dbt_prod/atlas_demo_dbt.db'
+      schema_directory: '/home/pn/sqlite/dbt_prod/data'
+
+  target: dev
